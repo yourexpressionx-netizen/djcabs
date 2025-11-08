@@ -8,7 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white shadow-md">
+    <header className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-200 border-b border-white/20">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -26,25 +26,25 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/destinations"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Destinations
             </Link>
             <Link
               href="/tours"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Tours
             </Link>
             <Link
               href="/about"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               About
             </Link>
             <Link
               href="/b2b"
-              className="text-gray-600 hover:text-blue-600 transition-colors"
+              className="text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               B2B
             </Link>
@@ -88,7 +88,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t"
+            className="md:hidden bg-white/90 backdrop-blur-md border-t border-white/20"
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
               <Link

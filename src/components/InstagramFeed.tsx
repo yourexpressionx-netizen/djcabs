@@ -14,12 +14,16 @@ export default function InstagramFeed({ username, widgetId = 'default' }: Instag
       <div className="snapwidget-container relative aspect-square max-w-4xl mx-auto">
         <iframe 
           src={`https://snapwidget.com/embed/${widgetId}`}
-          className="snapwidget-widget w-full h-full"
-          allowTransparency={true}
-          frameBorder="0"
-          scrolling="no"
-          style={{border: 'none', overflow: 'hidden'}}
-        ></iframe>
+          className="snapwidget-widget w-full h-full border-0"
+          loading="lazy"
+          style={{
+            width: '100%',
+            height: '100%',
+            border: 'none',
+            overflow: 'hidden',
+            background: 'transparent'
+          }}
+        />
       </div>
       
       <div className="text-center mt-4">

@@ -89,12 +89,17 @@ Additional Notes: ${formData.message}
     >
       <form
         onSubmit={handleSubmit}
-        className="p-6 bg-white rounded-lg shadow-lg space-y-6"
+        className="p-8 bg-gradient-to-br from-white/95 via-white/90 to-blue-50/95 backdrop-blur-md rounded-xl shadow-2xl space-y-8 border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.15)]"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="text-center mb-8">
+          <h3 className="text-3xl font-bold text-gray-900 mb-3">Book Your Ride</h3>
+          <p className="text-gray-700 text-lg">Get an instant quote for your journey</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
-              Full Name *
+            <label htmlFor="fullName" className="block text-sm font-bold text-gray-800 mb-2">
+              Full Name <span className="text-blue-600">*</span>
             </label>
             <input
               type="text"
@@ -102,14 +107,14 @@ Additional Notes: ${formData.message}
               name="fullName"
               required
               placeholder="Enter your full name"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium"
               value={formData.fullName}
               onChange={handleInputChange}
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-              Phone Number *
+            <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+              Phone Number <span className="text-blue-600">*</span>
             </label>
             <input
               type="tel"
@@ -117,7 +122,7 @@ Additional Notes: ${formData.message}
               name="phone"
               required
               placeholder="Enter your phone number"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.phone}
               onChange={handleInputChange}
             />
@@ -126,8 +131,8 @@ Additional Notes: ${formData.message}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="pickupLocation" className="block text-sm font-medium text-gray-700">
-              Pickup Location *
+            <label htmlFor="pickupLocation" className="block text-sm font-semibold text-gray-700 mb-2">
+              Pickup Location <span className="text-blue-600">*</span>
             </label>
             <input
               type="text"
@@ -135,14 +140,14 @@ Additional Notes: ${formData.message}
               name="pickupLocation"
               required
               placeholder="e.g., Bagdogra Airport"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.pickupLocation}
               onChange={handleInputChange}
             />
           </div>
           <div>
-            <label htmlFor="dropLocation" className="block text-sm font-medium text-gray-700">
-              Drop Location *
+            <label htmlFor="dropLocation" className="block text-sm font-semibold text-gray-700 mb-2">
+              Drop Location <span className="text-blue-600">*</span>
             </label>
             <input
               type="text"
@@ -150,7 +155,7 @@ Additional Notes: ${formData.message}
               name="dropLocation"
               required
               placeholder="e.g., Darjeeling Mall Road"
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.dropLocation}
               onChange={handleInputChange}
             />
@@ -159,8 +164,8 @@ Additional Notes: ${formData.message}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="pickupDate" className="block text-sm font-medium text-gray-700">
-              Pickup Date *
+            <label htmlFor="pickupDate" className="block text-sm font-semibold text-gray-700 mb-2">
+              Pickup Date <span className="text-blue-600">*</span>
             </label>
             <input
               type="date"
@@ -168,21 +173,21 @@ Additional Notes: ${formData.message}
               name="pickupDate"
               required
               min={new Date().toISOString().split('T')[0]}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.pickupDate}
               onChange={handleInputChange}
             />
           </div>
           <div>
-            <label htmlFor="pickupTime" className="block text-sm font-medium text-gray-700">
-              Pickup Time *
+            <label htmlFor="pickupTime" className="block text-sm font-semibold text-gray-700 mb-2">
+              Pickup Time <span className="text-blue-600">*</span>
             </label>
             <input
               type="time"
               id="pickupTime"
               name="pickupTime"
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.pickupTime}
               onChange={handleInputChange}
             />
@@ -191,14 +196,14 @@ Additional Notes: ${formData.message}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="vehicleType" className="block text-sm font-medium text-gray-700">
-              Vehicle Type *
+            <label htmlFor="vehicleType" className="block text-sm font-semibold text-gray-700 mb-2">
+              Vehicle Type <span className="text-blue-600">*</span>
             </label>
             <select
               id="vehicleType"
               name="vehicleType"
               required
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.vehicleType}
               onChange={handleInputChange}
             >
@@ -210,8 +215,8 @@ Additional Notes: ${formData.message}
             </select>
           </div>
           <div>
-            <label htmlFor="passengers" className="block text-sm font-medium text-gray-700">
-              Number of Passengers *
+            <label htmlFor="passengers" className="block text-sm font-semibold text-gray-700 mb-2">
+              Number of Passengers <span className="text-blue-600">*</span>
             </label>
             <input
               type="number"
@@ -220,7 +225,7 @@ Additional Notes: ${formData.message}
               required
               min={1}
               max={16}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
               value={formData.passengers}
               onChange={handleInputChange}
             />
@@ -228,25 +233,25 @@ Additional Notes: ${formData.message}
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
             Additional Requirements
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+            className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
             placeholder="Any special requests or requirements?"
             value={formData.message}
             onChange={handleInputChange}
           />
         </div>
 
-        <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-500">* Required fields</p>
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 pt-4">
+          <p className="text-sm text-gray-600">Fields marked with <span className="text-blue-600">*</span> are required</p>
           <button
             type="submit"
-            className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="w-full md:w-auto bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transform transition-all duration-200 hover:scale-105 active:scale-95 shadow-xl font-bold text-lg"
           >
             Book Now
           </button>
@@ -254,9 +259,9 @@ Additional Notes: ${formData.message}
 
         {submitted && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="mt-4 p-4 bg-green-50 text-green-800 rounded-md"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-6 p-6 bg-green-50 text-green-800 rounded-lg border border-green-100 shadow-sm"
           >
             <p>Thank you for your booking request! We will contact you shortly.</p>
             <p className="text-sm mt-2">If nothing opens automatically, please check your popup blocker settings.</p>

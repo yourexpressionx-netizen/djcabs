@@ -25,12 +25,19 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="metadata"
             poster="/images/hero-poster.jpg"
-            className="object-cover w-full h-full hidden md:block"
+            className="absolute inset-0 w-full h-full object-cover scale-105 hidden md:block"
           >
+            {/* Prefer WebM for better compression, but provide MP4 fallback for wider codec support */}
+            <source src="/videos/hero-loop.webm" type="video/webm" />
             <source src="/videos/hero-loop.mp4" type="video/mp4" />
+            Your browser does not support the video tag. You can
+            <a href="/videos/hero-loop.webm" className="underline ml-1">open the WebM directly</a>
+            {" "}or
+            <a href="/videos/hero-loop.mp4" className="underline ml-1">open the MP4 directly</a>.
           </video>
-          <div className="block md:hidden">
+          <div className="block md:hidden relative w-full h-full">
             <Image
               src="/images/hero-mobile.jpg"
               alt="Darjeeling mountains and taxi"
@@ -39,8 +46,8 @@ export default function Home() {
               className="object-cover"
             />
           </div>
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          {/* Gradient Overlay for better video visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30"></div>
         </div>
 
         {/* Hero Content */}
