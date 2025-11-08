@@ -107,7 +107,7 @@ Additional Notes: ${formData.message}
               name="fullName"
               required
               placeholder="Enter your full name"
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.fullName}
               onChange={handleInputChange}
             />
@@ -122,7 +122,7 @@ Additional Notes: ${formData.message}
               name="phone"
               required
               placeholder="Enter your phone number"
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.phone}
               onChange={handleInputChange}
             />
@@ -140,7 +140,7 @@ Additional Notes: ${formData.message}
               name="pickupLocation"
               required
               placeholder="e.g., Bagdogra Airport"
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.pickupLocation}
               onChange={handleInputChange}
             />
@@ -155,7 +155,7 @@ Additional Notes: ${formData.message}
               name="dropLocation"
               required
               placeholder="e.g., Darjeeling Mall Road"
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.dropLocation}
               onChange={handleInputChange}
             />
@@ -173,7 +173,7 @@ Additional Notes: ${formData.message}
               name="pickupDate"
               required
               min={new Date().toISOString().split('T')[0]}
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.pickupDate}
               onChange={handleInputChange}
             />
@@ -187,7 +187,7 @@ Additional Notes: ${formData.message}
               id="pickupTime"
               name="pickupTime"
               required
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.pickupTime}
               onChange={handleInputChange}
             />
@@ -203,7 +203,7 @@ Additional Notes: ${formData.message}
               id="vehicleType"
               name="vehicleType"
               required
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium"
               value={formData.vehicleType}
               onChange={handleInputChange}
             >
@@ -225,7 +225,8 @@ Additional Notes: ${formData.message}
               required
               min={1}
               max={16}
-              className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+              placeholder="Enter number of passengers"
+              className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
               value={formData.passengers}
               onChange={handleInputChange}
             />
@@ -240,7 +241,7 @@ Additional Notes: ${formData.message}
             id="message"
             name="message"
             rows={4}
-            className="mt-1 block w-full px-4 py-3 rounded-lg border-gray-200 bg-gray-50 shadow-sm focus:border-blue-500 focus:ring-blue-500 focus:bg-white transition-colors duration-200"
+            className="mt-1 block w-full px-4 py-3 rounded-lg border-2 border-gray-300 bg-white shadow-sm focus:border-blue-600 focus:ring-blue-600 transition-all duration-200 text-gray-900 font-medium placeholder-gray-500"
             placeholder="Any special requests or requirements?"
             value={formData.message}
             onChange={handleInputChange}
