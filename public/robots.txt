@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darjeelingcabs.com/sitemap.xml
