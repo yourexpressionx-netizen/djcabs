@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enable static exports
   images: {
     remotePatterns: [
       {
@@ -11,10 +10,25 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.sanity.io',
       },
+      {
+        protocol: 'https',
+        hostname: 'scontent.cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'instagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.fna.fbcdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'instagram.fixb6-1.fna.fbcdn.net',
+      },
     ],
-    unoptimized: true, // Required for static export
   },
-  // Server components are enabled by default in Next.js 13+
+  // Server components and API routes enabled by default in Next.js 13+
 }
 
 module.exports = nextConfig

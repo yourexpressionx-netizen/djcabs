@@ -84,12 +84,12 @@ export default function Footer() {
         </div>
 
         {/* Google Maps Embed */}
-        <div className="mb-8 rounded-lg overflow-hidden h-[300px]">
+        <div className="mb-8 rounded-lg overflow-hidden h-[300px] border-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56517.42701235554!2d88.39438570229876!3d26.706678876720267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e44113c2257b9b%3A0x7c0d7d14dd024a19!2sSiliguri%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1699426841447!5m2!1sen!2sin"
             width="100%"
             height="100%"
-            style={{ border: 0 }}
+            className="w-full h-full border-0"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
