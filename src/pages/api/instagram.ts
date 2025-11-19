@@ -55,7 +55,7 @@ export default async function handler(
         media_type: post.media_type || 'IMAGE',
         thumbnail_url: post.thumbnail_url
       };
-    }).filter(post => post.media_url).slice(0, 6);
+    }).filter((post: InstagramPost) => post.media_url).slice(0, 6);
 
     // Log for debugging
     console.log('Instagram posts fetched:', posts.length);
