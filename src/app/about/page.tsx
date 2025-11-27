@@ -15,7 +15,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Story</h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-800 font-medium mb-8">
               Founded by Mr. Dawa Lama with over 20 years of experience in Darjeeling transport,
               DarjeelingCabs has been serving tourists and locals since 2010.
             </p>
@@ -30,12 +30,12 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-bold mb-6">Meet Our Founder</h2>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-800 mb-6 leading-relaxed">
                   Mr. Dawa Lama started DarjeelingCabs with a vision to provide tourists 
                   with a friendly, local experience while maintaining the highest standards 
                   of professionalism and safety.
                 </p>
-                <p className="text-gray-600">
+                <p className="text-gray-800 leading-relaxed">
                   His extensive knowledge of the region and commitment to customer service 
                   has made DarjeelingCabs a trusted name in local transportation.
                 </p>
@@ -75,7 +75,7 @@ export default function About() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">Professional Driver</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800">
                     Experienced in mountain driving with proper licensing and safety training.
                   </p>
                 </div>
@@ -93,15 +93,15 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <h3 className="text-xl font-semibold mb-4">Background Checks</h3>
-                <p className="text-gray-600">All our drivers undergo thorough background verification</p>
+                <p className="text-gray-800">All our drivers undergo thorough background verification</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-4">Vehicle Maintenance</h3>
-                <p className="text-gray-600">Regular servicing and safety inspections</p>
+                <p className="text-gray-800">Regular servicing and safety inspections</p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-4">Insurance Coverage</h3>
-                <p className="text-gray-600">Comprehensive insurance for all trips</p>
+                <p className="text-gray-800">Comprehensive insurance for all trips</p>
               </div>
             </div>
           </div>

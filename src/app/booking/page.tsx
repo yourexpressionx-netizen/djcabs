@@ -38,19 +38,19 @@ export default function Booking() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4">24/7 Support</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800">
                 Round-the-clock assistance for all your travel needs
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4">Experienced Drivers</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800">
                 Professional drivers with extensive local knowledge
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4">Fixed Pricing</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-800">
                 Transparent rates with no hidden charges
               </p>
             </div>

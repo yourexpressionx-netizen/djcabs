@@ -69,9 +69,9 @@ export default function Destinations() {
                   </div>
                   <div className="p-6">
                     <h2 className="text-2xl font-bold mb-2">{destination.name}</h2>
-                    <p className="text-gray-600 mb-4">{destination.description}</p>
+                    <p className="text-gray-800 mb-4">{destination.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-500">
+                      <span className="text-gray-800 font-semibold">
                         Starting from ₹{destination.startingPrice}
                       </span>
                       <span className="text-blue-600 font-medium">Learn More →</span>

@@ -93,28 +93,28 @@ export default function Header() {
             <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
               <Link
                 href="/destinations"
-                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-800 font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Destinations
               </Link>
               <Link
                 href="/tours"
-                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-800 font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Tours
               </Link>
               <Link
                 href="/about"
-                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-800 font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/b2b"
-                className="text-gray-600 hover:text-blue-600 transition-colors py-2"
+                className="text-gray-800 font-medium hover:text-blue-600 transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 B2B

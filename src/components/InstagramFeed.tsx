@@ -42,7 +42,7 @@ export default function InstagramFeed() {
       <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">
         Follow Us on Instagram
       </h2>
-      <p className="text-center text-gray-600 mb-8">
+      <p className="text-center text-gray-800 font-medium mb-8">
         Latest updates from our travels
       </p>
 
@@ -88,7 +88,7 @@ export default function InstagramFeed() {
                     </>
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                      <span className="text-gray-400 text-sm">No image</span>
+                      <span className="text-gray-700 text-sm font-medium">No image</span>
                     </div>
                   )}
                 </div>
@@ -96,11 +96,11 @@ export default function InstagramFeed() {
             );
           })
         ) : !loading ? (
-          <div className="col-span-2 md:col-span-3 text-center py-8 text-gray-500">
+          <div className="col-span-2 md:col-span-3 text-center py-8 text-gray-700 font-medium">
             No posts available
           </div>
         ) : (
-          <div className="col-span-2 md:col-span-3 text-center py-8 text-gray-400">
+          <div className="col-span-2 md:col-span-3 text-center py-8 text-gray-800 font-medium">
             Loading...
           </div>
         )}

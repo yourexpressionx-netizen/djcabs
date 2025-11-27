@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-700 font-medium">
           <p>© {new Date().getFullYear()} DarjeelingCabs. All rights reserved.</p>
         </div>
       </div>

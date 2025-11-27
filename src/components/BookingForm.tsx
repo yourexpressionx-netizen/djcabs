@@ -249,7 +249,7 @@ Additional Notes: ${formData.message}
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 pt-4">
-          <p className="text-sm text-gray-600">Fields marked with <span className="text-blue-600">*</span> are required</p>
+          <p className="text-sm text-gray-800 font-medium">Fields marked with <span className="text-blue-600">*</span> are required</p>
           <button
             type="submit"
             className="w-full md:w-auto bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transform transition-all duration-200 hover:scale-105 active:scale-95 shadow-xl font-bold text-lg"

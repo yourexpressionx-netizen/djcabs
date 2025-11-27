@@ -119,7 +119,7 @@ export default function Tours() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2">{tour.title}</h3>
-                  <p className="text-gray-600 mb-4">{tour.description}</p>
+                  <p className="text-gray-800 mb-4">{tour.description}</p>
                   <ul className="space-y-2 mb-4">
                     {tour.features.map((feature, index) => (
                       <li key={index} className="flex items-center text-gray-700">
@@ -141,7 +141,7 @@ export default function Tours() {
                     ))}
                   </ul>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">
+                    <span className="text-gray-800 font-semibold">
                       From ₹{tour.priceFrom}
                     </span>
                     <Link
@@ -162,7 +162,7 @@ export default function Tours() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Need a Custom Tour Package?</h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 font-medium mb-8 max-w-2xl mx-auto">
             Contact us to create a personalized itinerary that matches your preferences and budget
           </p>
           <div className="flex justify-center gap-4">
