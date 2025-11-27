@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import PhotoCarousel from '@/components/PhotoCarousel';
 
 export const metadata: Metadata = {
   title: 'About Us | DarjeelingCabs — Professional Taxi Service',
@@ -52,6 +53,9 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery Carousel */}
+      <PhotoCarousel />
 
       {/* Our Drivers Section */}
       <section className="py-16 bg-gray-50">
