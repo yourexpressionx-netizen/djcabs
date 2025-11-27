@@ -37,20 +37,20 @@ export default function Booking() {
           <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">24/7 Support</h3>
-              <p className="text-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">24/7 Support</h3>
+              <p className="text-gray-900 font-medium">
                 Round-the-clock assistance for all your travel needs
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Experienced Drivers</h3>
-              <p className="text-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Experienced Drivers</h3>
+              <p className="text-gray-900 font-medium">
                 Professional drivers with extensive local knowledge
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Fixed Pricing</h3>
-              <p className="text-gray-800">
+              <h3 className="text-xl font-semibold mb-4 text-gray-900">Fixed Pricing</h3>
+              <p className="text-gray-900 font-medium">
                 Transparent rates with no hidden charges
               </p>
             </div>

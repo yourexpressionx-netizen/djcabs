@@ -41,7 +41,7 @@ export default function Destinations() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Popular Destinations</h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-900 font-semibold">
               Explore the most beautiful places in Darjeeling, Sikkim, and beyond with our comfortable cab services
             </p>
           </div>

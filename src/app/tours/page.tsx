@@ -162,7 +162,7 @@ export default function Tours() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Need a Custom Tour Package?</h2>
-          <p className="text-xl text-gray-800 font-medium mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-900 font-semibold mb-8 max-w-2xl mx-auto">
             Contact us to create a personalized itinerary that matches your preferences and budget
           </p>
           <div className="flex justify-center gap-4">
