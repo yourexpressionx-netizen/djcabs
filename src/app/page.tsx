@@ -99,9 +99,8 @@ export default function Home() {
       </section>
 
       {/* Quick Booking Strip */}
-      <section id="booking" className="py-16 bg-white">
+      <section id="booking" className="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">Book Your Ride</h2>
           <BookingForm />
         </div>
       </section>
