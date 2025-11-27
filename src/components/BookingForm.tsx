@@ -209,7 +209,7 @@ Additional Notes: ${formData.message}
             >
               {Object.values(VEHICLE_TYPES).map((vehicle) => (
                 <option key={vehicle.id} value={vehicle.id.toUpperCase()}>
-                  {vehicle.name} - {vehicle.capacity} - From ₹{vehicle.basePrice}
+                  {vehicle.name} - {vehicle.capacity}
                 </option>
               ))}
             </select>
