@@ -14,7 +14,7 @@ export default function About() {
       <section className="relative py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Story</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Story</h1>
             <p className="text-lg text-gray-900 font-semibold mb-8">
               Founded by Mr. Dawa Lama with over 20 years of experience in Darjeeling transport,
               DarjeelingCabs has been serving tourists and locals since 2010.
@@ -24,7 +24,7 @@ export default function About() {
       </section>
 
       {/* Founder Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -86,7 +86,7 @@ export default function About() {
       </section>
 
       {/* Safety Section */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8 text-gray-900">Our Commitment to Safety</h2>

@@ -84,8 +84,8 @@ export default function B2B() {
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8">
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                <p className="text-gray-800 mb-6">{service.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">{service.title}</h3>
+                <p className="text-gray-900 font-medium mb-6">{service.description}</p>
                 <ul className="space-y-3">
                   {service.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-start">
@@ -102,7 +102,7 @@ export default function B2B() {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-900 font-medium">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -115,7 +115,7 @@ export default function B2B() {
       {/* Why Choose Us */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Why Choose Us</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">

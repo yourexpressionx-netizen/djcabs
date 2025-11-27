@@ -88,9 +88,9 @@ export default function Contact() {
                 <div className="flex justify-center mb-4">
                   {method.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-2">{method.title}</h3>
-                <p className="text-gray-600 mb-4">{method.description}</p>
-                <p className="font-semibold mb-4">{method.value}</p>
+                <h3 className="text-xl font-bold mb-2 text-gray-900">{method.title}</h3>
+                <p className="text-gray-900 font-medium mb-4">{method.description}</p>
+                <p className="font-semibold mb-4 text-gray-900">{method.value}</p>
                 <a
                   href={method.link}
                   className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors"
@@ -107,7 +107,7 @@ export default function Contact() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Location</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Our Location</h2>
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3544.8633433849496!2d88.26261007489936!3d27.044219976350783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e42f245d1598c7%3A0x7c045dbc53ca6e66!2sDarjeeling%20Cabs!5e0!3m2!1sen!2sin!4v1699458163097!5m2!1sen!2sin"
