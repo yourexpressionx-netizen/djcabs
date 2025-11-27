@@ -4,48 +4,42 @@ export const VEHICLE_TYPES = {
     name: 'Hatchback',
     capacity: '4 passengers',
     description: 'Compact and economical, perfect for small groups',
-    examples: 'Swift, i10, Wagon R',
-    basePrice: 2000
+    examples: 'Swift, i10, Wagon R'
   },
   SEDAN: {
     id: 'sedan',
     name: 'Sedan',
     capacity: '4 passengers',
     description: 'Comfortable ride with extra luggage space',
-    examples: 'Dzire, Xcent, Etios',
-    basePrice: 2500
+    examples: 'Dzire, Xcent, Etios'
   },
   SUV: {
     id: 'suv',
     name: 'SUV',
     capacity: '6-7 passengers',
     description: 'Spacious and powerful, ideal for hill drives',
-    examples: 'Scorpio, XUV500, Safari',
-    basePrice: 3000
+    examples: 'Scorpio, XUV500, Safari'
   },
   INNOVA: {
     id: 'innova',
     name: 'Innova',
     capacity: '7 passengers',
     description: 'Reliable and comfortable for long journeys',
-    examples: 'Toyota Innova',
-    basePrice: 3500
+    examples: 'Toyota Innova'
   },
   INNOVA_CRYSTA: {
     id: 'innova-crysta',
     name: 'Innova Crysta',
     capacity: '7 passengers',
     description: 'Premium comfort with enhanced features',
-    examples: 'Toyota Innova Crysta',
-    basePrice: 4000
+    examples: 'Toyota Innova Crysta'
   },
   TEMPO_TRAVELER: {
     id: 'tempo-traveler',
     name: 'Tempo Traveler',
     capacity: '12-16 passengers',
     description: 'Perfect for large groups and tours',
-    examples: 'Force Tempo Traveler',
-    basePrice: 5000
+    examples: 'Force Tempo Traveler'
   }
 } as const;
 
